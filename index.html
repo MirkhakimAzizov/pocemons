@@ -5,13 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pocemons</title>
     <!-- main css -->
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
 
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="./index.html">
+                    <img src="./images/logo.svg" alt="Logo" class="header__logo">
+                </a>
+                <!-- <nav class="header__nav">
+                </nav> -->
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <form class="hero__form" action="#">
+                        <select class="hero__select" name="select">
+                            <option value="gross">Gross</option>
+                            <option value="gross">Gross</option>
+                            <option value="gross">Gross</option>
+                        </select>
+                        <label>
+                            <input class="hero__search" type="search" placeholder="Search">
+                        </label>
+                        <select name="select">
+                            <option value="Aa-Zz">Aa-Zz</option>
+                            <option value="Aa-Zz">Aa-Zz</option>
+                            <option value="Aa-Zz">Aa-Zz</option>
+                        </select>
+                        <button class="hero__btn" type="submit">Button</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="pacemons">
+            <div class="container">
+                <div class="pacemons__inner">
+                    <ul class="pacemons__list">
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
 </body>
+<script src="./pocemon.js"></script>
+<script src="./script.js"></script>
 
 </html>
