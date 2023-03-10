@@ -7,9 +7,36 @@
         max-width: 1125px;
         width: 100%;
         margin: 0 auto;
-        display: block;
+        @include flex(row, space-between, center);
     }
     &__select {
-        background-color: white;
+        padding: 16px 82px;
+        margin-right: 15px;
+        @include font(normal, 700, 24px, 28px);
+        background: #FFFFFF;
+        border: 2px solid #000000;
+        border-radius: 15px;
+    }
+    &__search {
+        padding: 16px 29px;
+        margin-right: 15px;
+        @include font(normal, 700, 24px, 28px);
+        background: #FFFFFF;
+        border: 2px solid #000000;
+        border-radius: 15px;
+        &::placeholder {
+            background-image: url(../../images/search.svg);
+            background-repeat: no-repeat;
+            background-position: right top;
+            opacity: 1;
+            color: #000000;
+        }
+    }
+    &__btn {
+        padding: 16px 64px;
+        @include font(normal, 700, 24px, 28px);
+        background: #FFFFFF;
+        border: 2px solid #000000;
+        border-radius: 15px;
     }
 }

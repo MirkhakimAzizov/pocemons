@@ -496,10 +496,49 @@ img {
   max-width: 1125px;
   width: 100%;
   margin: 0 auto;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .hero__select {
-  background-color: white;
+  padding: 16px 82px;
+  margin-right: 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 15px;
+}
+.hero__search {
+  padding: 16px 29px;
+  margin-right: 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 15px;
+}
+.hero__search::placeholder {
+  background-image: url(../../images/search.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  opacity: 1;
+  color: #000000;
+}
+.hero__btn {
+  padding: 16px 64px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 15px;
 }
 
 .footer {
