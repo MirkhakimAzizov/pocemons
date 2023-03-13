@@ -10,6 +10,7 @@
         @include flex(row, space-between, center);
     }
     &__select {
+        max-width: 25%;
         padding: 16px 82px;
         margin-right: 15px;
         @include font(normal, 700, 24px, 28px);
